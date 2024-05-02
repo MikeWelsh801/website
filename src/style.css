@@ -68,6 +68,7 @@ canvas {
 header {
     background: var(--dark-bg);
     grid-column: 2 / span 6;
+    min-width: 350px;
     font-size: 2.5rem;
     padding-left: 2rem;
     border-radius: 20px;
@@ -77,6 +78,7 @@ header {
 section {
     grid-column: 2 / 8;
     padding: 1rem;
+    min-width: 350px;
     background: var(--dark-bg);
     border-radius: 20px;
     font-size: 1.25rem;
@@ -102,7 +104,7 @@ img {
 blockquote p {
     color: var(--bold-text-fg);
     background-color: b;
-    font-size: 4rem;
+    font-size: 3rem;
     display: inline;
     line-height: 1;
 }
