@@ -1,0 +1,6 @@
+{
+  "name": "NBA Playoffs Model",
+  "platform": "CLI - Unix",
+  "description": "This is a simulation of an NBA finals series. This application takes in single game win probabities for a home team and an away team, and calculates the probabilities of each team winning a 7-game finals series, along with the probability of each posible outcome (e.g. home team wins in 5 games).<br><br>A trained neural network can predict the probability of a single game home team win, given the stats for two teams. I then passed these probabilities into the 7-game series sim to predict the 2021-2022 NBA finals between Boston and Golden State. The model assigned the highest probability to Golden State winning in 7 games (just under 17 percent). The actual result was Golden State winning in 6 games.",
+  "link": "https://github.com/MikeWelsh801/FinalsSim"
+}
