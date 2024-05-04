@@ -109,6 +109,11 @@ blockquote p {
     line-height: 1;
 }
 
+.vid {
+    width: 500px;
+    max-width: 90%;
+}
+
 .left {
     grid-column: 6 / 12;
 }

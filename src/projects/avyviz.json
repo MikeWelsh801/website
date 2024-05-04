@@ -1,7 +1,0 @@
-{
-  "name": "Avyviz",
-  "platform": "iOS & Android",
-  "description": "AvyViz is a mobile application designed to enhance safety for backcountry enthusiasts in Utah by providing accessible and easy-to-use avalanche data visualization. Utilizing open-source data and forecasts from the Utah Avalanche Center, Avyviz will allow users to download critical safety information for use in areas with unreliable cellular networks. The app features the ability to plot touring routes on a map and calculates the avalanche danger at each point along the route, much like traffic information on Google Maps. This integrated approach will streamline the current labor-intensive process of route planning and risk assessment, enabling users to safely enjoy Utah's backcountry.",
-  "link": "https://avyviz.com",
-  "image": "AvyVizScreen.png"
-}

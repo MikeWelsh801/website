@@ -1,3 +1,8 @@
+// add imports for projects here
+import avyviz from "./assets/avyviz.json";
+import finalssim from "./assets/finalssim.json";
+import turkishgame from "./assets/turkishgame.json";
+
 /**
  * @param name - The name of the project
  * @param platform - the platform it runs on
@@ -5,39 +10,29 @@
  * @param link - optional link to the project
  * @returns the html for the project
  */
-async function project(path: string): Promise<string> {
-  const json = await import(/* @vite-ignore */ path);
-
-  let nameString = `<a>${json["name"]}</a>`
-  if (json["link"] !== undefined) {
-    nameString = `<a href="${json["link"]}">${json["name"]}</a>`;
+function project(path: any): string {
+  let nameString = `<a>${path["name"]}</a>`;
+  if (path["link"] !== undefined) {
+    nameString = `<a href="${path["link"]}">${path["name"]}</a>`;
   }
-  let image = "";
-  if (json["image"] !== undefined) {
-    image = `<img src="./src/assets/${json["image"]}"/>`
-  }
-
 
   return `
       <br>
       ${nameString}
       <a>|</a>
-      <a>${json["platform"]}</a>
-      ${image}
+      <a>${path["platform"]}</a>
       <p>
-        ${json["description"]}
+        ${path["description"]}
       </p>`;
 }
 
-
-// add project jsons to dynamically load
+// add projects to website here
 [
-  "avyviz.json",
-  "finalssim.json",
-  "turkishgame.json"
+  avyviz,
+  finalssim,
+  turkishgame
 ]
   .forEach((file) => {
-    project(`./projects/${file}`).then((projects) => {
-      document.getElementById("proj")!.innerHTML += projects;
-    });
+    document.getElementById("proj")!.innerHTML += project(file);
   });
+
