@@ -1,6 +1,6 @@
 import './style.css';
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as jeans from "./assets/jeans-fabric_albedo.png";
 import * as normal from "./assets/jeans-fabric_normal-ogl.png";
 import * as jeansao from "./assets/jeans-fabric_ao.png";
