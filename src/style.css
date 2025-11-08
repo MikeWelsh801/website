@@ -12,6 +12,7 @@ canvas {
     --spacing: 300px;
     --text-fg: rgba(190, 190, 190, 0.8);
     --text-light-fg: rgba(120, 150, 170, 0.8);
+    --text-link-fg: rgba(120, 150, 200, 0.8);
     --bold-text-fg: rgba(0, 190, 80, 1);
 
     font-family: brandon-grotesque, sans-serif;
@@ -52,6 +53,7 @@ a {
     color: var(--text-light-fg);
     padding-bottom: 5px;
 }
+
 
 p {
     margin-top: 0px;
@@ -107,6 +109,20 @@ blockquote p {
     font-size: 3rem;
     display: inline;
     line-height: 1;
+}
+
+
+.inline {
+    font-family: elevon, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-right: 0rem;
+    color: var(--text-light-fg);
+    padding-bottom: 5px;
+}
+
+.link {
+    color: var(--text-link-fg);
 }
 
 .vid {
