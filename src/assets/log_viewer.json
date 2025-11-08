@@ -1,0 +1,6 @@
+{
+  "name": "Log Viewer",
+  "platform": "CLI - Unix",
+  "description": "This project lets the user view log files in a nice tui application. It also has filtering, fuzzy-searching, and vim keybindings.",
+  "link": "https://github.com/MikeWelsh801/log_view"
+}

@@ -2,6 +2,7 @@
 import avyviz from "./assets/avyviz.json";
 import finalssim from "./assets/finalssim.json";
 import turkishgame from "./assets/turkishgame.json";
+import log_viewer from "./assets/log_viewer.json";
 
 /**
  * @param name - The name of the project
@@ -28,6 +29,7 @@ function project(path: any): string {
 
 // add projects to website here
 [
+  log_viewer,
   avyviz,
   finalssim,
   turkishgame
